@@ -7,7 +7,7 @@ The work starts with **data inspection and cleaning**, followed by **data valida
 
 The focus of this project was to **do things in the correct order**:
 first understand the data, then clean it safely, validate assumptions, and only then analyze it.
-No data was dropped or guessed during cleaning.
+No data was dropped or guessed during the cleaning stage.
 
 ---
 
@@ -91,6 +91,28 @@ This ensured numeric values were logically consistent after cleaning.
 
 ---
 
+## How the Data Was Saved (Important)
+To keep the workflow clear and professional, the data was saved at different stages for different purposes:
+
+- **Raw Dataset**  
+  - Contains the original, untouched data  
+  - Used only for reference and audit  
+  - No cleaning applied  
+
+- **EDA-Clean Dataset**  
+  - Contains standardized missing values, corrected data types, and validation columns  
+  - Used to demonstrate the cleaning and EDA process  
+  - No rows were dropped globally at this stage  
+
+- **Dashboard-Ready Dataset**  
+  - Created specifically for visualization and reporting  
+  - Contains only business-relevant columns  
+  - Rows were dropped only where missing values would break charts (for example, missing item or total spent)  
+
+This separation ensures transparency while also keeping visualizations clean and reliable.
+
+---
+
 ## Exploratory Data Analysis (EDA)
 
 ### Key Questions Explored
@@ -120,8 +142,6 @@ Visualizations were created to support the findings, including:
 - Payment method distribution
 - Missing payment method impact
 
-
-
 ### Revenue by Item
 ![Revenue by Item](images/revenue_by_item.png)
 
@@ -133,4 +153,3 @@ Visualizations were created to support the findings, including:
 
 ### Missing Payment Method Impact
 ![Missing Payment Method Impact](images/missing_payment_method.png)
-
