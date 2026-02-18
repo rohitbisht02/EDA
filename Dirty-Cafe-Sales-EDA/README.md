@@ -121,7 +121,7 @@ Visualizations were created to support the findings, including:
 - Missing payment method impact
 
 
-![Revenue by Item](images/revenue_by_item.png)
+
 ### Revenue by Item
 ![Revenue by Item](images/revenue_by_item.png)
 
