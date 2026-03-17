@@ -1,4 +1,4 @@
-# Dirty Cafe Sales - Data Cleaning & Exploratory Data Analysis (EDA)
+# Dirty Cafe Sales – Data Cleaning & Exploratory Data Analysis (EDA)
 
 ## Project Overview
 This project documents the complete process of working with a messy, real-world cafe sales dataset.
